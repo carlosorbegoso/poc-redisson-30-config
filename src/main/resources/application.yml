@@ -1,0 +1,12 @@
+quarkus:
+  redisson:
+    single-server-config:
+      address: redis://localhost:6379
+      password: null
+      connection-pool-size: 64
+      connection-minimum-idle-size: 10
+      idle-connection-timeout: 10000
+      connect-timeout: 10000
+      timeout: 3000
+    threads: 16
+    netty-threads: 32
